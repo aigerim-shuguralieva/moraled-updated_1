@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.9 595.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #007ae1;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #00266d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: #0045a2;
+      }
+
+      .cls-4 {
+        fill: #00266d;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <rect class="cls-2" x="12.2" y="9.9" width="817.6" height="575.5" rx="12" ry="12"/>
+      <g>
+        <path class="cls-4" d="M27.9,569.7s444.5-42.9,786.1,8.6c0,0-423.9,8.6-786.1-8.6Z"/>
+        <g>
+          <path class="cls-1" d="M345.5,433.6s50.2-53.2,62.5-63.7c14.4-12.2,137.2-200.7,188.1-286.6,2.6-4.4,6.2-8.1,10.5-10.8l90.7-57.6s-35,137.4-35.3,490.8c0,3.4-.9,6.8-2.7,9.7-7.8,12.8-32.6,43.8-73.7,10.9-2-1.6-3.1-4-3.2-6.5l-2.5-284.2,22.8-37.2-141,229.4s-51.3,80.2-116.3,5.7Z"/>
+          <polygon class="cls-3" points="603.7 199.1 580.8 235 581.4 271.2 603.7 199.1"/>
+          <path class="cls-4" d="M144.5,539.3s59.2,20.3,81.7-36.9V214.7l109,201.2,64.5-61.4L242.5,121.5s-73.2-41.6-98,27.8v390Z"/>
+          <path class="cls-4" d="M408.1,367.9l53.8,58-11.1,15.3s-55.3,63.3-105.3-9.5l62.5-63.7Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

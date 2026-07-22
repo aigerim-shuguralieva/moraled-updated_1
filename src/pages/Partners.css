@@ -1,0 +1,298 @@
+.partners-section {
+    background: linear-gradient(to bottom, #fdf3e7, #fdf3e7);
+    padding: 100px 20px;
+    text-align: center;
+}
+  
+.partners-wrapper h2 {
+    font-size: 36px;
+    color: #045b57;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+  
+.partners-intro {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+  
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+  
+.partner-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.4s ease forwards;
+    opacity: 0;
+}
+  
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+  
+.partner-card img {
+    width: 100px;
+    margin-bottom: 16px;
+}
+  
+.partner-card h3 {
+    font-size: 28px;
+    color: #045b57;
+    margin-bottom: 12px;
+}
+  
+.partner-card p {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+}
+  
+.partner-values h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.partner-values ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    color: #444;
+    line-height: 2;
+}
+.partner-values li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.partner-values li i {
+  color: #0a9396;
+  font-size: 20px;
+  width: 24px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.partner-values li::before {
+  content: none;
+}
+  
+.partner-values li::before {
+    content: '•';
+    color: #045b57;
+    font-size: 24px;
+    margin-right: 8px;
+}
+.pillars li i,
+.partner-values li i,
+.partner-benefits li i {
+  color: #0a9396;
+  margin-right: 8px;
+  width: 18px;
+  text-align: center;
+}
+/* Impact Together */
+.impact-together {
+    background: #fdf3e7;
+    padding: 80px 20px;
+    text-align: center;
+}
+  
+.impact-together h3 {
+    font-size: 36px;
+    color: #045b57;
+    margin-bottom: 40px;
+}
+  
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+  
+.impact-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+  
+.impact-box:hover {
+    transform: scale(1.05);
+}
+  
+.impact-box span {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 12px;
+}
+  
+.impact-box h4 {
+    font-size: 22px;
+    color: #333;
+}
+  
+.impact-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Partner Voices */
+
+.partner-voices {
+  background: linear-gradient(to right, #fdf3e7, #fdf3e7);
+  padding: 80px 20px;
+  text-align: center;
+  
+}
+
+.partner-voices h3 {
+  font-size: 36px;
+  color: #045b57;
+  margin-bottom: 30px;
+}
+
+.partner-voices blockquote {
+  font-size: 20px;
+  font-style: italic;
+  color: #444;
+  margin: 20px auto;
+  max-width: 700px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+
+/* How We Collaborate */
+.collaborate-section {
+  background: linear-gradient(to bottom, #fdf3e7, #fdf3e7);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.collaborate-section h2 {
+  font-size: 36px;
+  color: #045b57;
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.collaborate-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.collab-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.collab-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.collab-card span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+  color: #045b57;
+}
+
+.collab-card h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.collab-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Become a Partner */
+.become-partner-section {
+  background: linear-gradient(to right, #045b57, #ecc9ab);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.become-partner-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.partner-intro {
+  font-size: 22px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.partner-benefits {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 50px;
+  animation: fadeInUp 1.4s ease forwards;
+  opacity: 0;
+}
+
+.partner-benefits li {
+  margin-bottom: 12px;
+}
+
+.partner-cta {
+  padding: 16px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1.6s ease forwards;
+  opacity: 0;
+}
+
+.partner-cta:hover {
+  background-color: #fdf3e7;
+  transform: scale(1.05);
+}
+
+
+/* Become a Partner */
