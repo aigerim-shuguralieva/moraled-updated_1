@@ -46,11 +46,19 @@
     box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
   
-.team-card img {
-    width: 100%;
-    max-width: 160px;
+.team-avatar {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, #0a9396, #045b57);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
 }
   
 .team-card h3 {
@@ -185,7 +193,7 @@
 .join-mission {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(to right, #ecc9ab, #045b57);
+    background: linear-gradient(to right, #8a5a2e, #045b57);
     color: #fff;
 }
   

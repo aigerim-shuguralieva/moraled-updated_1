@@ -1,8 +1,8 @@
 .footer {
-  background: linear-gradient(to right, #045b57, #ecc9ab);
+  background: linear-gradient(to right, #045b57, #8a5a2e);
   color: #fff;
   padding: 60px 20px 30px;
-  
+
 }
 
 .footer__top {
@@ -67,6 +67,13 @@
   margin-top: 40px;
   font-size: 14px;
   opacity: 0.8;
+}
+
+.footer__privacy-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Responsive */

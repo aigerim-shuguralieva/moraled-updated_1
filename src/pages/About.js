@@ -10,16 +10,16 @@ import WaveTop from '../components/WaveTop';
 import WaveBottom from '../components/WaveBottom';
 import SampleModal from '../components/samples/SampleModal';
 
-const pillars = [
-  { month: 'September', icon: 'fas fa-heart', name: 'Caring', focus: 'Caring means practicing kindness, compassion, and empathy while helping others in need.' },
-  { month: 'October', icon: 'fas fa-handshake', name: 'Responsibility', focus: 'Responsibility means being accountable, reliable, and managing ourselves well.' },
-  { month: 'November', icon: 'fas fa-hand-holding-heart', name: 'Respect', focus: 'Respect means honoring ourselves, others, our teachers and parents, and the natural world.' },
-  { month: 'December', icon: 'fas fa-star', name: 'Trustworthiness', focus: 'Trustworthiness means being honest, acting with integrity, and keeping our promises.' },
-  { month: 'January', icon: 'fas fa-scale-balanced', name: 'Fairness', focus: 'Fairness means upholding justice, inclusion, equality, and good sportsmanship.' },
-  { month: 'February', icon: 'fas fa-lightbulb', name: 'Leadership', focus: 'Leadership means taking initiative, working as a team, and serving others.' },
-  { month: 'March', icon: 'fas fa-seedling', name: 'Perseverance', focus: 'Perseverance means building resilience, courage, and a growth mindset.' },
-  { month: 'April', icon: 'fas fa-globe', name: 'Citizenship', focus: 'Citizenship means caring for our community, our country, and our environment.' },
-  { month: 'May', icon: 'fas fa-bullseye', name: 'Self-Discipline', focus: 'Self-Discipline means practicing self-control, setting meaningful goals, and building healthy habits.' },
+const pillarIcons = [
+  'fas fa-heart',
+  'fas fa-handshake',
+  'fas fa-hand-holding-heart',
+  'fas fa-star',
+  'fas fa-scale-balanced',
+  'fas fa-lightbulb',
+  'fas fa-seedling',
+  'fas fa-globe',
+  'fas fa-bullseye',
 ];
 
 function About() {
@@ -29,6 +29,16 @@ function About() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const pillars = pillarIcons.map((icon, index) => {
+    const n = index + 1;
+    return {
+      month: t(`scopeSequence.month_${n}`),
+      icon,
+      name: t(`scopeSequence.pillar_${n}`),
+      focus: t(`home.pillar_focus_${n}`),
+    };
+  });
 
 
   return (
@@ -169,12 +179,9 @@ function About() {
             </ul>
 
             <div className="whole-child-buttons">
-              <button
-                className="btn-primary"
-                onClick={() => alert("Coming soon: Interactive learning paths!")}
-              >
+              <a href="/scope-and-sequence" className="btn-primary">
                 {t('home.whole_child_button_1')}
-              </button>
+              </a>
               <button
                 className="btn-outline"
                 onClick={() => {
@@ -216,9 +223,9 @@ function About() {
           </div>
 
           <div className="testimonial-actions">
-            <button className="btn-outline" onClick={() => alert("More stories coming soon!")}>
+            <a href="/contact" className="btn-outline">
               {t('home.testimonial_button')}
-            </button>
+            </a>
           </div>
         </section>
       </main>

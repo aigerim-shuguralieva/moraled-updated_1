@@ -1,12 +1,86 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './Partners.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SchoolsOfMoralEd from '../components/schools/SchoolsOfMoralEd';
 import PartnersSection from '../components/partners/PartnersSection';
+import './ForSchools.css';
+import './Partners.css';
 
-function Partners() {
+function PartnerWithUs() {
   const { t } = useTranslation();
+
+  const benefits = [
+    {
+      icon: 'fas fa-heart',
+      title: t('forSchools.benefit_1_title'),
+      description: t('forSchools.benefit_1_desc'),
+    },
+    {
+      icon: 'fas fa-chart-bar',
+      title: t('forSchools.benefit_2_title'),
+      description: t('forSchools.benefit_2_desc'),
+    },
+    {
+      icon: 'fas fa-book-open',
+      title: t('forSchools.benefit_3_title'),
+      description: t('forSchools.benefit_3_desc'),
+    },
+    {
+      icon: 'fas fa-globe',
+      title: t('forSchools.benefit_4_title'),
+      description: t('forSchools.benefit_4_desc'),
+    },
+  ];
+
+  const testimonials = [
+    {
+      quote: t('forSchools.testimonial_1_quote'),
+      name: t('forSchools.testimonial_1_name'),
+    },
+    {
+      quote: t('forSchools.testimonial_2_quote'),
+      name: t('forSchools.testimonial_2_name'),
+    },
+    {
+      quote: t('forSchools.testimonial_3_quote'),
+      name: t('forSchools.testimonial_3_name'),
+    },
+  ];
+
+  const steps = [
+    {
+      number: '01',
+      icon: 'fas fa-comments',
+      title: t('forSchools.step_1_title'),
+      description: t('forSchools.step_1_desc'),
+    },
+    {
+      number: '02',
+      icon: 'fas fa-sliders-h',
+      title: t('forSchools.step_2_title'),
+      description: t('forSchools.step_2_desc'),
+    },
+    {
+      number: '03',
+      icon: 'fas fa-chalkboard-teacher',
+      title: t('forSchools.step_3_title'),
+      description: t('forSchools.step_3_desc'),
+    },
+    {
+      number: '04',
+      icon: 'fas fa-rocket',
+      title: t('forSchools.step_4_title'),
+      description: t('forSchools.step_4_desc'),
+    },
+    {
+      number: '05',
+      icon: 'fas fa-chart-line',
+      title: t('forSchools.step_5_title'),
+      description: t('forSchools.step_5_desc'),
+    },
+  ];
+
   const partners = [
     {
       name: t('partners.partner_1_name'),
@@ -28,6 +102,67 @@ function Partners() {
   return (
     <>
       <Header />
+
+      <section className="for-schools-hero">
+        <h1>{t('forSchools.hero_title')}</h1>
+        <p>
+          {t('forSchools.hero_subtitle')}
+        </p>
+      </section>
+
+      <section className="for-schools-benefits">
+        <h2>{t('forSchools.benefits_title')}</h2>
+        <div className="benefits-grid">
+          {benefits.map((benefit) => (
+            <div className="benefit-card" key={benefit.title}>
+              <div className="benefit-icon">
+                <i className={benefit.icon}></i>
+              </div>
+              <h3>{benefit.title}</h3>
+              <p>{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <SchoolsOfMoralEd />
+
+      <section className="implementation-section">
+        <div className="implementation-wrapper">
+          <div className="implementation-steps">
+            {steps.map((step) => (
+              <div className="implementation-step" key={step.number}>
+                <div className="step-number">{step.number}</div>
+                <div className="step-icon">
+                  <i className={step.icon}></i>
+                </div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="for-schools-testimonials">
+        <h2>{t('forSchools.testimonials_title')}</h2>
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial) => (
+            <div className="testimonial-card" key={testimonial.name}>
+              <i className="fas fa-quote-left testimonial-quote-icon"></i>
+              <p className="testimonial-quote">{testimonial.quote}</p>
+              <p className="testimonial-name">{testimonial.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="for-schools-cta">
+        <h2>{t('forSchools.cta_title')}</h2>
+        <p>{t('forSchools.cta_text')}</p>
+        <a href="/contact" className="btn-primary">{t('forSchools.cta_button')}</a>
+      </section>
+
       <section className="partners-section">
         <div className="partners-wrapper">
           <h2>{t('partners.title')}</h2>
@@ -125,7 +260,6 @@ function Partners() {
         </div>
       </section>
 
-
       {/* Become a Partner */}
       <section className="become-partner-section">
         <h2>{t('partners.become_title')}</h2>
@@ -141,11 +275,9 @@ function Partners() {
         <a href="/contact" className="btn-primary">{t('partners.become_cta')}</a>
       </section>
 
-
-
       <Footer />
     </>
   );
 }
 
-export default Partners;
+export default PartnerWithUs;

@@ -10,24 +10,23 @@ function Team() {
     {
       name: 'Amina Tursunova',
       role: t('team.role_1'),
-      image: '/images/team-amina.jpg',
     },
     {
       name: 'Bekzat Karimov',
       role: t('team.role_2'),
-      image: '/images/team-bekzat.jpg',
     },
     {
       name: 'Elina Rustamova',
       role: t('team.role_3'),
-      image: '/images/team-elina.jpg',
     },
     {
       name: 'Farid Akhmedov',
       role: t('team.role_4'),
-      image: '/images/team-farid.jpg',
     },
   ];
+
+  const getInitials = (name) =>
+    name.split(' ').map((part) => part[0]).join('').slice(0, 2).toUpperCase();
 
   return (
     <>
@@ -41,7 +40,7 @@ function Team() {
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div className="team-card" key={index}>
-                <img src={member.image} alt={member.name} />
+                <div className="team-avatar" aria-hidden="true">{getInitials(member.name)}</div>
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
               </div>

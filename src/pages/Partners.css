@@ -1,5 +1,16 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .partners-section {
-    background: linear-gradient(to bottom, #fdf3e7, #fdf3e7);
+    background: #ffffff;
     padding: 100px 20px;
     text-align: center;
 }
@@ -32,7 +43,7 @@
 }
   
 .partner-card {
-    background: #fff;
+    background: #f5f7fa;
     border-radius: 12px;
     padding: 30px 20px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
@@ -135,7 +146,13 @@
     padding: 30px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
 }
+
+.impact-grid .impact-box:nth-child(2) { animation-delay: 0.1s; }
+.impact-grid .impact-box:nth-child(3) { animation-delay: 0.2s; }
+.impact-grid .impact-box:nth-child(4) { animation-delay: 0.3s; }
   
 .impact-box:hover {
     transform: scale(1.05);
@@ -160,10 +177,10 @@
 /* Partner Voices */
 
 .partner-voices {
-  background: linear-gradient(to right, #fdf3e7, #fdf3e7);
+  background: #ffffff;
   padding: 80px 20px;
   text-align: center;
-  
+
 }
 
 .partner-voices h3 {
@@ -242,7 +259,7 @@
 
 /* Become a Partner */
 .become-partner-section {
-  background: linear-gradient(to right, #045b57, #ecc9ab);
+  background: linear-gradient(to right, #045b57, #8a5a2e);
   color: #fff;
   padding: 100px 20px;
   text-align: center;

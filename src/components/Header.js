@@ -57,30 +57,33 @@ export default function Header() {
                 onClick={() => toggleNavDropdown('curriculum')}
                 onBlur={() => setTimeout(() => setNavDropdown(null), 200)}
               >
-                Curriculum <span className="nav-dropdown__arrow">{navDropdown === 'curriculum' ? '▲' : '▼'}</span>
+                {t('nav.curriculum')} <span className="nav-dropdown__arrow">{navDropdown === 'curriculum' ? '▲' : '▼'}</span>
               </button>
               {navDropdown === 'curriculum' && (
                 <div className="nav-dropdown__menu">
                   <NavLink to="/features" className="nav-dropdown__item">{t('nav.features')}</NavLink>
-                  <NavLink to="/scope-and-sequence" className="nav-dropdown__item">Scope &amp; Sequence</NavLink>
+                  <NavLink to="/scope-and-sequence" className="nav-dropdown__item">{t('nav.scope_sequence')}</NavLink>
                   <NavLink to="/moralEd" className="nav-dropdown__item">{t('nav.moraled')}</NavLink>
                 </div>
               )}
             </div>
 
+            <NavLink to="/partner-with-us">{t('nav.partner_with_us')}</NavLink>
+
             <div className="nav-dropdown">
               <button
                 className="nav-dropdown__button"
-                onClick={() => toggleNavDropdown('schools')}
+                onClick={() => toggleNavDropdown('resources')}
                 onBlur={() => setTimeout(() => setNavDropdown(null), 200)}
               >
-                For Schools <span className="nav-dropdown__arrow">{navDropdown === 'schools' ? '▲' : '▼'}</span>
+                {t('nav.resources')} <span className="nav-dropdown__arrow">{navDropdown === 'resources' ? '▲' : '▼'}</span>
               </button>
-             {navDropdown === 'schools' && (
+              {navDropdown === 'resources' && (
                 <div className="nav-dropdown__menu">
-                  <NavLink to="/for-schools" className="nav-dropdown__item">For Schools</NavLink>
-                  <NavLink to="/faq" className="nav-dropdown__item">FAQ</NavLink>
-                  <NavLink to="/partners" className="nav-dropdown__item">{t('nav.partners')}</NavLink>
+                  <NavLink to="/research" className="nav-dropdown__item">{t('nav.research')}</NavLink>
+                  <NavLink to="/about-bullying" className="nav-dropdown__item">{t('nav.about_bullying')}</NavLink>
+                  <NavLink to="/student-volunteers" className="nav-dropdown__item">{t('nav.student_volunteers')}</NavLink>
+                  <NavLink to="/faq" className="nav-dropdown__item">{t('nav.faq')}</NavLink>
                 </div>
               )}
             </div>
@@ -120,16 +123,19 @@ export default function Header() {
             <NavLink to="/" onClick={() => setOpen(false)}>{t('nav.about')}</NavLink>
             <NavLink to="/team" onClick={() => setOpen(false)}>{t('nav.team')}</NavLink>
 
-            <span className="mobile-nav__label">Curriculum</span>
+            <span className="mobile-nav__label">{t('nav.curriculum')}</span>
             <NavLink to="/features" onClick={() => setOpen(false)}>{t('nav.features')}</NavLink>
-            <NavLink to="/scope-and-sequence" onClick={() => setOpen(false)}>Scope &amp; Sequence</NavLink>
+            <NavLink to="/scope-and-sequence" onClick={() => setOpen(false)}>{t('nav.scope_sequence')}</NavLink>
             <NavLink to="/moralEd" onClick={() => setOpen(false)}>{t('nav.moraled')}</NavLink>
 
-            <span className="mobile-nav__label">For Schools</span>
-            <NavLink to="/for-schools" onClick={() => setOpen(false)}>For Schools</NavLink>
-            <NavLink to="/faq" onClick={() => setOpen(false)}>FAQ</NavLink>
-            <NavLink to="/partners" onClick={() => setOpen(false)}>{t('nav.partners')}</NavLink>
-            
+            <NavLink to="/partner-with-us" onClick={() => setOpen(false)}>{t('nav.partner_with_us')}</NavLink>
+
+            <span className="mobile-nav__label">{t('nav.resources')}</span>
+            <NavLink to="/research" onClick={() => setOpen(false)}>{t('nav.research')}</NavLink>
+            <NavLink to="/about-bullying" onClick={() => setOpen(false)}>{t('nav.about_bullying')}</NavLink>
+            <NavLink to="/student-volunteers" onClick={() => setOpen(false)}>{t('nav.student_volunteers')}</NavLink>
+            <NavLink to="/faq" onClick={() => setOpen(false)}>{t('nav.faq')}</NavLink>
+
             <div className="language-dropdown mobile">
               <div className="language-dropdown__title">{t('common.language')}</div>
               {languages.map(lang => (

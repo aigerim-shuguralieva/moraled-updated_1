@@ -5,9 +5,9 @@
 
 /* OUR STORY */
 .story-section {
-  background: linear-gradient(to right, #fdf6e3, #fdf3e7);
+  background: #ffffff;
   padding: 100px 20px;
-  
+
 }
 
 .story-wrapper {
@@ -80,7 +80,7 @@
 
 /* OUR MISSION */
 .mission-section {
-  background: linear-gradient(135deg, #045b57, #ecc9ab);
+  background: linear-gradient(135deg, #045b57, #8a5a2e);
   color: #fdf3e7;
   padding: 100px 20px;
   text-align: center;
@@ -210,7 +210,7 @@
 
 /* OUR BELIEFS */
 .beliefs-section {
-  background: radial-gradient(circle at top, #fdf3e7, #fdf3e7);
+  background: radial-gradient(circle at top, #eaf6f4, #eaf6f4);
   padding: 100px 20px;
   font-family: 'Georgia', serif;
 }

@@ -22,7 +22,7 @@ export default function Footer() {
           <h4>{t('footer.explore')}</h4>
           <a href="/">{t('nav.about')}</a>
           <a href="/team">{t('nav.team')}</a>
-          <a href="/partners">{t('nav.partners')}</a>
+          <a href="/partner-with-us">{t('nav.partners')}</a>
           <a href="/contact">{t('nav.contact')}</a>
         </div>
 
@@ -36,6 +36,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <p>© {new Date().getFullYear()} {t('footer.brand_name')}. {t('footer.rights')}</p>
+        <a href="/privacy-policy" className="footer__privacy-link">Privacy Policy</a>
       </div>
     </footer>
   );

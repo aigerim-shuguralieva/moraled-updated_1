@@ -5,8 +5,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import GallerySlider from '../components/gallery/GallerySlider';
 import SeminarSection from '../components/seminars/SeminarSection';
-import SchoolsOfMoralEd from '../components/schools/SchoolsOfMoralEd';
-import PartnersSection from '../components/partners/PartnersSection';
 
 function MoralEd() {
   const { t } = useTranslation();
@@ -26,8 +24,6 @@ function MoralEd() {
       {/* ✅ Yeni Seminer Modülü */}
       <SeminarSection />
 
-      <SchoolsOfMoralEd />
-      <PartnersSection />
       <Footer />
     </>
   );
