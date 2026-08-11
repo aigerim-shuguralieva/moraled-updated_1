@@ -6,6 +6,13 @@ import Footer from '../components/Footer';
 
 function Features() {
   const { t } = useTranslation();
+
+  const howItWorksSteps = [
+    { icon: 'fas fa-book-open', title: t('howItWorks.step_1_title'), description: t('howItWorks.step_1_desc') },
+    { icon: 'fas fa-people-group', title: t('howItWorks.step_2_title'), description: t('howItWorks.step_2_desc') },
+    { icon: 'fas fa-chart-line', title: t('howItWorks.step_3_title'), description: t('howItWorks.step_3_desc') },
+  ];
+
   const features = [
     {
       icon: 'fas fa-child',
@@ -32,6 +39,28 @@ function Features() {
   return (
     <>
       <Header />
+
+      <section className="how-it-works-section">
+        <div className="how-it-works-wrapper">
+          <h1>{t('howItWorks.title')}</h1>
+          <p className="how-it-works-intro">
+            {t('howItWorks.intro')}
+          </p>
+          <div className="how-it-works-steps">
+            {howItWorksSteps.map((step, index) => (
+              <div className="how-it-works-step" key={step.title}>
+                <div className="how-it-works-step-number">{String(index + 1).padStart(2, '0')}</div>
+                <div className="how-it-works-step-icon">
+                  <i className={step.icon}></i>
+                </div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="features-section">
         <div className="features-wrapper">
           <h2>{t('features.title')}</h2>

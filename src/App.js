@@ -11,6 +11,9 @@ import FAQ from './pages/FAQ';
 import Research from './pages/Research';
 import AboutBullying from './pages/AboutBullying';
 import StudentVolunteers from './pages/StudentVolunteers';
+import Materials from './pages/Materials';
+import Pricing from './pages/Pricing';
+import Events from './pages/Events';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
@@ -31,6 +34,9 @@ function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/about-bullying" element={<AboutBullying />} />
         <Route path="/student-volunteers" element={<StudentVolunteers />} />
+        <Route path="/materials" element={<Materials />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/moraled" element={<MoralEd />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

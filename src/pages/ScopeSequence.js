@@ -14,6 +14,14 @@ function ScopeSequence() {
     objective: t(`scopeSequence.objective_${n}`),
   }));
 
+  const ageBandIcons = ['fas fa-shapes', 'fas fa-book-reader', 'fas fa-comments', 'fas fa-user-graduate'];
+  const ageBands = [1, 2, 3, 4].map((n, index) => ({
+    icon: ageBandIcons[index],
+    title: t(`scopeSequence.band_${n}_title`),
+    range: t(`scopeSequence.band_${n}_range`),
+    description: t(`scopeSequence.band_${n}_desc`),
+  }));
+
   return (
     <>
       <Header />
@@ -46,6 +54,28 @@ function ScopeSequence() {
           </table>
         </div>
       </section>
+
+      <section className="age-bands-section">
+        <div className="age-bands-wrapper">
+          <h2>{t('scopeSequence.age_bands_title')}</h2>
+          <p className="age-bands-intro">
+            {t('scopeSequence.age_bands_intro')}
+          </p>
+          <div className="age-bands-grid">
+            {ageBands.map((band) => (
+              <div className="age-band-card" key={band.title}>
+                <div className="age-band-icon">
+                  <i className={band.icon}></i>
+                </div>
+                <span className="age-band-range">{band.range}</span>
+                <h3>{band.title}</h3>
+                <p>{band.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

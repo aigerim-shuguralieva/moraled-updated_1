@@ -13,7 +13,7 @@ export default function Footer() {
           <h2>{t('footer.brand_name')}</h2>
           <p>{t('footer.brand_tagline')}</p>
           <div className="footer__contact">
-            <p><FaMapMarkerAlt /> Bishkek, Kyrgyzstan</p>
+            <p><FaMapMarkerAlt /> {t('contact.location_text')}</p>
             <p><FaEnvelope /> info@moraled.org</p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <p>© {new Date().getFullYear()} {t('footer.brand_name')}. {t('footer.rights')}</p>
-        <a href="/privacy-policy" className="footer__privacy-link">Privacy Policy</a>
+        <a href="/privacy-policy" className="footer__privacy-link">{t('privacy.hero_title')}</a>
       </div>
     </footer>
   );

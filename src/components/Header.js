@@ -63,6 +63,7 @@ export default function Header() {
                 <div className="nav-dropdown__menu">
                   <NavLink to="/features" className="nav-dropdown__item">{t('nav.features')}</NavLink>
                   <NavLink to="/scope-and-sequence" className="nav-dropdown__item">{t('nav.scope_sequence')}</NavLink>
+                  <NavLink to="/materials" className="nav-dropdown__item">{t('nav.materials')}</NavLink>
                   <NavLink to="/moralEd" className="nav-dropdown__item">{t('nav.moraled')}</NavLink>
                 </div>
               )}
@@ -83,6 +84,8 @@ export default function Header() {
                   <NavLink to="/research" className="nav-dropdown__item">{t('nav.research')}</NavLink>
                   <NavLink to="/about-bullying" className="nav-dropdown__item">{t('nav.about_bullying')}</NavLink>
                   <NavLink to="/student-volunteers" className="nav-dropdown__item">{t('nav.student_volunteers')}</NavLink>
+                  <NavLink to="/pricing" className="nav-dropdown__item">{t('nav.pricing')}</NavLink>
+                  <NavLink to="/events" className="nav-dropdown__item">{t('nav.events')}</NavLink>
                   <NavLink to="/faq" className="nav-dropdown__item">{t('nav.faq')}</NavLink>
                 </div>
               )}
@@ -126,6 +129,7 @@ export default function Header() {
             <span className="mobile-nav__label">{t('nav.curriculum')}</span>
             <NavLink to="/features" onClick={() => setOpen(false)}>{t('nav.features')}</NavLink>
             <NavLink to="/scope-and-sequence" onClick={() => setOpen(false)}>{t('nav.scope_sequence')}</NavLink>
+            <NavLink to="/materials" onClick={() => setOpen(false)}>{t('nav.materials')}</NavLink>
             <NavLink to="/moralEd" onClick={() => setOpen(false)}>{t('nav.moraled')}</NavLink>
 
             <NavLink to="/partner-with-us" onClick={() => setOpen(false)}>{t('nav.partner_with_us')}</NavLink>
@@ -134,6 +138,8 @@ export default function Header() {
             <NavLink to="/research" onClick={() => setOpen(false)}>{t('nav.research')}</NavLink>
             <NavLink to="/about-bullying" onClick={() => setOpen(false)}>{t('nav.about_bullying')}</NavLink>
             <NavLink to="/student-volunteers" onClick={() => setOpen(false)}>{t('nav.student_volunteers')}</NavLink>
+            <NavLink to="/pricing" onClick={() => setOpen(false)}>{t('nav.pricing')}</NavLink>
+            <NavLink to="/events" onClick={() => setOpen(false)}>{t('nav.events')}</NavLink>
             <NavLink to="/faq" onClick={() => setOpen(false)}>{t('nav.faq')}</NavLink>
 
             <div className="language-dropdown mobile">

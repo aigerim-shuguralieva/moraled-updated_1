@@ -1,3 +1,86 @@
+.how-it-works-section {
+  background-color: #ffffff;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.how-it-works-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.how-it-works-wrapper h1 {
+  font-size: 36px;
+  color: #045b57;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.how-it-works-intro {
+  font-size: 20px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.how-it-works-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.how-it-works-step {
+  position: relative;
+  background: #f5f7fa;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.how-it-works-steps .how-it-works-step:nth-child(2) { animation-delay: 0.15s; }
+.how-it-works-steps .how-it-works-step:nth-child(3) { animation-delay: 0.3s; }
+
+.how-it-works-step-number {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(10, 147, 150, 0.2);
+  font-family: 'Lora', serif;
+}
+
+.how-it-works-step-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #045b57;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.how-it-works-step h3 {
+  font-size: 22px;
+  color: #045b57;
+  margin-bottom: 10px;
+}
+
+.how-it-works-step p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
 .features-section {
   background: linear-gradient(to bottom, #fdf3e7, #fdf3e7);
   padding: 100px 20px;
