@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './Research.css';
 
 function Research() {
@@ -39,6 +40,11 @@ function Research() {
 
   return (
     <>
+      <Seo
+        title="The Evidence Behind MoralEd"
+        description="See how MoralEd measures impact through pillar reflections, teacher observations, and partner school outcomes."
+        path="/research"
+      />
       <Header />
 
       <section className="research-hero">

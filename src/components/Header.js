@@ -56,6 +56,8 @@ export default function Header() {
                 className="nav-dropdown__button"
                 onClick={() => toggleNavDropdown('curriculum')}
                 onBlur={() => setTimeout(() => setNavDropdown(null), 200)}
+                aria-haspopup="true"
+                aria-expanded={navDropdown === 'curriculum'}
               >
                 {t('nav.curriculum')} <span className="nav-dropdown__arrow">{navDropdown === 'curriculum' ? '▲' : '▼'}</span>
               </button>
@@ -76,6 +78,8 @@ export default function Header() {
                 className="nav-dropdown__button"
                 onClick={() => toggleNavDropdown('resources')}
                 onBlur={() => setTimeout(() => setNavDropdown(null), 200)}
+                aria-haspopup="true"
+                aria-expanded={navDropdown === 'resources'}
               >
                 {t('nav.resources')} <span className="nav-dropdown__arrow">{navDropdown === 'resources' ? '▲' : '▼'}</span>
               </button>
@@ -93,10 +97,13 @@ export default function Header() {
             <NavLink to="/contact">{t('nav.contact')}</NavLink>
 
             <div className="language-dropdown">
-              <button 
+              <button
                 className="language-dropdown__button"
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 onBlur={() => setTimeout(() => setLangMenuOpen(false), 200)}
+                aria-haspopup="true"
+                aria-expanded={langMenuOpen}
+                aria-label={t('common.language')}
               >
                 <span className="language-dropdown__flag">{currentLanguage.flag}</span>
                 <span className="language-dropdown__code">{currentLanguage.code.toUpperCase()}</span>
@@ -155,7 +162,7 @@ export default function Header() {
               ))}
             </div>
             
-            <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
+            <button className="close-btn" onClick={() => setOpen(false)} aria-label="Close menu">✕</button>
           </nav>
         )}
 

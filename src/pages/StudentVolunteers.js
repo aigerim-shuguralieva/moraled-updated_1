@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './StudentVolunteers.css';
 
 const getInitials = (name) =>
@@ -91,6 +92,11 @@ function StudentVolunteers() {
 
   return (
     <>
+      <Seo
+        title="Student Volunteers"
+        description="Join the students who volunteer to bring MoralEd's monthly pillars to life in classrooms across their schools."
+        path="/student-volunteers"
+      />
       <Header />
 
       <section className="volunteers-hero">

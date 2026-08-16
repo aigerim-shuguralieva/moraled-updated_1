@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './PrivacyPolicy.css';
 
 function PrivacyPolicy() {
@@ -9,6 +10,11 @@ function PrivacyPolicy() {
 
   return (
     <>
+      <Seo
+        title="Privacy Policy"
+        description="Learn what information MoralEd collects through this website and how it's used."
+        path="/privacy-policy"
+      />
       <Header />
 
       <section className="privacy-hero">

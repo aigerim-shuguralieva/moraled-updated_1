@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './Materials.css';
 
 function Materials() {
@@ -24,6 +25,11 @@ function Materials() {
 
   return (
     <>
+      <Seo
+        title="Materials for Schools"
+        description="See everything included when your school partners with MoralEd — teacher guides, activities, and more."
+        path="/materials"
+      />
       <Header />
 
       <section className="materials-hero">

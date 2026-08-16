@@ -4,6 +4,7 @@ import './About.css';
 import './Home.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WaveTop from '../components/WaveTop';
@@ -43,6 +44,11 @@ function About() {
 
   return (
     <>
+      <Seo
+        title="Character Education in Action"
+        description="MoralEd brings monthly values-based character education to K-12 schools in English, Russian, and Kyrgyz. Discover our program."
+        path="/"
+      />
       <Header />
 
       <main className="home">

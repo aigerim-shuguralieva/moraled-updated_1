@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './FAQ.css';
 
 function FAQ() {
@@ -19,6 +20,11 @@ function FAQ() {
 
   return (
     <>
+      <Seo
+        title="Frequently Asked Questions"
+        description="Answers to the questions schools ask most before bringing MoralEd on board — grade levels, cost, training, and more."
+        path="/faq"
+      />
       <Header />
       <section className="faq-hero">
         <h1>{t('faq.hero_title')}</h1>

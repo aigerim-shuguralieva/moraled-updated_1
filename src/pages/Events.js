@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './Events.css';
 
 function Events() {
@@ -21,6 +22,11 @@ function Events() {
 
   return (
     <>
+      <Seo
+        title="Educator Sessions & Events"
+        description="Live sessions for teachers, administrators, and families to learn more about MoralEd and how to get the most out of it."
+        path="/events"
+      />
       <Header />
 
       <section className="events-hero">

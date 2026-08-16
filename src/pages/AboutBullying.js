@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './AboutBullying.css';
 
 function AboutBullying() {
@@ -58,6 +59,11 @@ function AboutBullying() {
 
   return (
     <>
+      <Seo
+        title="Understanding and Preventing Bullying"
+        description="Learn what bullying looks like, warning signs, and how MoralEd's character pillars help prevent it."
+        path="/about-bullying"
+      />
       <Header />
 
       <section className="bullying-hero">

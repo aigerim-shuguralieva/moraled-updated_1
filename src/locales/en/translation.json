@@ -136,6 +136,7 @@
     "phone_title": "Phone",
     "phone_text": "+996 700 123 456",
     "form_title": "Send Us a Message",
+    "form_name": "Your Name",
     "form_school_name": "School Name",
     "form_role_placeholder": "Your Role",
     "form_role_teacher": "Teacher",

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Features.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 
 function Features() {
   const { t } = useTranslation();
@@ -38,6 +39,11 @@ function Features() {
 
   return (
     <>
+      <Seo
+        title="How MoralEd Works"
+        description="Learn how MoralEd's Learn, Practice, Measure framework builds character through monthly values-based lessons."
+        path="/features"
+      />
       <Header />
 
       <section className="how-it-works-section">

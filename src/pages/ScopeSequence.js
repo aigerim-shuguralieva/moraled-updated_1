@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import './ScopeSequence.css';
 
 function ScopeSequence() {
@@ -24,6 +25,11 @@ function ScopeSequence() {
 
   return (
     <>
+      <Seo
+        title="Scope & Sequence"
+        description="Explore MoralEd's month-by-month character education calendar, pillars, skills, and age-banded curriculum."
+        path="/scope-and-sequence"
+      />
       <Header />
       <section className="scope-section">
         <div className="scope-wrapper">

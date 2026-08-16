@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import SchoolsOfMoralEd from '../components/schools/SchoolsOfMoralEd';
 import PartnersSection from '../components/partners/PartnersSection';
 import './ForSchools.css';
@@ -101,6 +102,11 @@ function PartnerWithUs() {
 
   return (
     <>
+      <Seo
+        title="Partner With Us"
+        description="Bring MoralEd's monthly character education pillars to your school. See benefits, implementation steps, and our partner schools."
+        path="/partner-with-us"
+      />
       <Header />
 
       <section className="for-schools-hero">

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Team.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 
 function Team() {
   const { t } = useTranslation();
@@ -30,6 +31,11 @@ function Team() {
 
   return (
     <>
+      <Seo
+        title="Meet Our Team"
+        description="Meet the educators, designers, and community builders behind MoralEd's character education program."
+        path="/team"
+      />
       <Header />
       <section className="team-section">
         <div className="team-wrapper">

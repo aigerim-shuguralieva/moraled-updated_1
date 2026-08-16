@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import About from './pages/About';
 import Team from './pages/Team';
@@ -19,6 +20,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router>
       <ScrollToTop />
       <Routes>
@@ -41,6 +43,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
+    </HelmetProvider>
   );
 }
 
