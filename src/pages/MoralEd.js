@@ -30,6 +30,12 @@ function MoralEd() {
       {/* ✅ Yeni Seminer Modülü */}
       <SeminarSection />
 
+      <section className="moraled-cta">
+        <h2>{t('moraled.cta_title')}</h2>
+        <p>{t('moraled.cta_text')}</p>
+        <a href="/partner-with-us" className="btn-primary">{t('moraled.cta_button')}</a>
+      </section>
+
       <Footer />
     </>
   );

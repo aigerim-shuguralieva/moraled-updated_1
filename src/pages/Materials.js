@@ -43,6 +43,10 @@ function Materials() {
           <p className="materials-intro">
             {t('materials.intro_text')}
           </p>
+          <p className="materials-related-link">
+            {t('materials.related_scope_text')}{' '}
+            <a href="/scope-and-sequence">{t('materials.related_scope_link')} <i className="fas fa-arrow-right"></i></a>
+          </p>
           <div className="materials-grid">
             {items.map((item) => (
               <div className="materials-card" key={item.title}>

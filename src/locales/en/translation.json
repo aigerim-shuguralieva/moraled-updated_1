@@ -16,7 +16,8 @@
     "student_volunteers": "Student Volunteers",
     "faq": "FAQ",
     "materials": "Materials for Schools",
-    "events": "Events & Sessions"
+    "events": "Events & Sessions",
+    "climate": "Classroom Climate"
   },
   "values": {
     "Respect": "Respect",
@@ -43,6 +44,11 @@
     "Justice_desc": "Justice means standing up for fairness and equity.",
     "Self-awareness": "Self-awareness",
     "Self-awareness_desc": "Self-awareness means understanding our thoughts, feelings, and actions."
+  },
+  "definition": {
+    "title": "What Is Character Education?",
+    "text": "Character education is the intentional practice of helping children and young people develop the values, habits, and social-emotional skills they need to treat themselves and others with respect, make responsible decisions, and contribute to their communities. Through consistent modeling, guided practice, and reflection, character is built not as a single lesson, but as a lived, everyday practice.",
+    "followup": "MoralEd is committed to making character education a lived, everyday part of every classroom — not an add-on, but a foundation."
   },
   "home": {
     "hero_title": "Values-Based Education for the Next Generation",
@@ -91,7 +97,7 @@
     "testimonial_2": "I feel more confident speaking up for what's right.",
     "testimonial_2_author": "— Timur, Age 15",
     "testimonial_3": "MoralEd gave our staff a shared framework for character education — it's changed how we talk about behavior and growth in every classroom.",
-    "testimonial_3_author": "— [Name], School Principal",
+    "testimonial_3_author": "— A Partner School Principal",
     "testimonial_button": "Share Your Story"
   },
   "about": {
@@ -230,11 +236,38 @@
     "cta_text": "Reach out and we'll find a time that works for your team.",
     "cta_button": "Contact Us"
   },
+  "climate": {
+    "hero_title": "Classroom Climate & Student Engagement",
+    "hero_subtitle": "Every teacher knows a calm, connected classroom teaches better than a chaotic one. Here's how character education helps build one.",
+    "problem_title": "When Classrooms Feel Disconnected",
+    "problem_text_1": "When students don't feel a sense of belonging or respect in their classroom, they disengage. Disengagement shows up as disruptions, low participation, and a harder time focusing — not just for the student affected, but for the whole class around them.",
+    "problem_text_2": "Teachers already know this instinctively: a class that trusts and respects each other simply runs better than one that doesn't. The question is how to build that trust deliberately, rather than hoping it happens on its own.",
+    "solution_title": "Character Education Builds the Climate",
+    "solution_text_1": "Character education addresses the root cause rather than just the symptoms. Instead of only reacting to disruptions after they happen, it builds the shared values, habits, and relationships that make a calm, engaged classroom the default.",
+    "solution_text_2": "MoralEd's monthly pillars — Respect, Responsibility, Empathy, and others — give students and teachers a common vocabulary for how to treat each other, practiced consistently rather than addressed only when something goes wrong.",
+    "related_bullying_text": "Left unaddressed, a disconnected classroom climate can escalate into bullying.",
+    "related_bullying_link": "See how MoralEd approaches bullying prevention",
+    "work_title": "How MoralEd Builds Classroom Climate",
+    "work_1_title": "A Shared Monthly Focus",
+    "work_1_desc": "Every classroom works through the same nine pillars each year, building consistent expectations students can count on month to month.",
+    "work_1_link": "See the full calendar",
+    "work_2_title": "Everyday Practice, Not Just Lessons",
+    "work_2_desc": "Classroom rituals, empathy circles, and activities turn each pillar into something students do together, not just hear about.",
+    "work_2_link": "See what's included",
+    "work_3_title": "Tracking What Changes",
+    "work_3_desc": "Teacher observations and student reflections give schools a real read on whether classroom climate is actually improving.",
+    "work_3_link": "See our research",
+    "cta_title": "Ready to build a stronger classroom climate?",
+    "cta_text": "Talk to our team about bringing MoralEd's pillars to your school.",
+    "cta_button": "Partner With Us"
+  },
   "materials": {
     "hero_title": "Materials for Schools",
     "hero_subtitle": "Everything your teachers need to bring MoralEd to life — ready to use from day one.",
     "intro_title": "What's Included",
     "intro_text": "Every partner school receives the full toolkit below at no extra licensing cost — nothing to build from scratch.",
+    "related_scope_text": "Want to see which materials line up with which month?",
+    "related_scope_link": "View the full Scope & Sequence",
     "item_1_title": "Teacher's Guides & Lesson Plans",
     "item_1_desc": "Month-by-month teacher guides with step-by-step lesson plans, discussion prompts, and pacing guidance for every pillar.",
     "item_2_title": "Story & Song Collections",
@@ -263,7 +296,8 @@
     "step_2_title": "Practice",
     "step_2_desc": "Classroom rituals, empathy circles, and everyday activities turn each month's value into a habit — not just something students learn, but something they do.",
     "step_3_title": "Measure",
-    "step_3_desc": "Monthly reflections and teacher observations track whether the values are actually landing, giving your school real data instead of guesswork."
+    "step_3_desc": "Monthly reflections and teacher observations track whether the values are actually landing, giving your school real data instead of guesswork.",
+    "step_3_link": "See how we measure impact"
   },
   "features": {
     "title": "Why MoralEd Works",
@@ -279,7 +313,10 @@
   },
   "moraled": {
     "hero_title": "MoralEd: Growing Character, Together",
-    "hero_subtitle": "We believe education is not just about knowledge—it's about nurturing values that last a lifetime."
+    "hero_subtitle": "We believe education is not just about knowledge—it's about nurturing values that last a lifetime.",
+    "cta_title": "See MoralEd in Your School",
+    "cta_text": "Talk to our team about bringing these moments to your classrooms.",
+    "cta_button": "Partner With Us"
   },
   "research": {
     "hero_title": "The Evidence Behind MoralEd",
@@ -302,6 +339,21 @@
     "method_3_desc": "Periodic surveys capture how students and families experience the program at home and at school, not just inside the classroom.",
     "method_4_title": "End-of-Year Impact Reports",
     "method_4_desc": "Every partner school receives a summary report translating the data above into clear, actionable takeaways for next year.",
+    "field_research_title": "What the Broader Research Says",
+    "field_research_intro": "MoralEd's approach is grounded in decades of research on social-emotional and character education. Here's some of what the wider field has found — separate from our own program data above.",
+    "citation_1_authors": "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D., & Schellinger, K. B. (2011)",
+    "citation_1_title": "The Impact of Enhancing Students' Social and Emotional Learning: A Meta-Analysis of School-Based Universal Interventions",
+    "citation_1_source": "Child Development, 82(1)",
+    "citation_1_finding": "A landmark analysis of over 200 school-based programs found that students showed significant gains in academic performance, along with improved social-emotional skills, attitudes, and behavior, and fewer conduct problems.",
+    "citation_2_authors": "Taylor, R. D., Oberle, E., Durlak, J. A., & Weissberg, R. P. (2017)",
+    "citation_2_title": "Promoting Positive Youth Development Through School-Based Social and Emotional Learning Interventions: A Meta-Analysis of Follow-Up Effects",
+    "citation_2_source": "Child Development, 88(4)",
+    "citation_2_finding": "A follow-up analysis found that these benefits persisted over time, with positive effects on academic performance and social-emotional skills still visible years after programs ended.",
+    "citation_3_authors": "Berkowitz, M. W., & Bier, M. C. (2007)",
+    "citation_3_title": "What Works in Character Education",
+    "citation_3_source": "Journal of Research in Character Education, 5(1)",
+    "citation_3_finding": "A review of character education programs identified consistent practices — including explicit teaching of values, modeling by adults, and sustained implementation — linked to measurable improvements in student behavior and school climate.",
+    "field_research_disclaimer": "These findings reflect published research on social-emotional and character education programs broadly, not studies of MoralEd specifically. Our own program's outcomes are tracked separately, as outlined above.",
     "cta_title": "See what MoralEd could look like at your school",
     "cta_text": "Talk to our team about how we'd track impact in your classrooms.",
     "cta_button": "Partner With Us"
@@ -336,6 +388,8 @@
     "tips_note": "Every situation is different, and there's no single right answer — but keeping it to yourself is never the way through it.",
     "family_title": "A Note for Families",
     "family_text": "If your child tells you about bullying, start by listening without judgment and thank them for telling you. Avoid promising to keep it secret, since adults at school may need to be involved to resolve it. Work with your child's teacher or school counselor on next steps, and check in regularly afterward — knowing someone is paying attention makes a real difference.",
+    "related_climate_text": "Bullying is often a sign that a classroom's broader climate needs attention.",
+    "related_climate_link": "See how character education builds a stronger classroom climate",
     "cta_title": "How MoralEd Helps Prevent Bullying",
     "cta_text": "Our monthly pillars — including Respect, Kindness, and Empathy — build the everyday habits that make bullying less likely to take root in the first place.",
     "cta_button": "Bring MoralEd to Your School"
@@ -468,7 +522,10 @@
     "band_3_desc": "Case studies, debates, and peer-led projects challenge students to apply each pillar to more complex, real-world scenarios.",
     "band_4_title": "High School",
     "band_4_range": "Ages 15–17",
-    "band_4_desc": "Independent projects, mentorship roles, and real-world case studies push students to lead by example and apply each pillar beyond the classroom."
+    "band_4_desc": "Independent projects, mentorship roles, and real-world case studies push students to lead by example and apply each pillar beyond the classroom.",
+    "cta_title": "See What Comes With Each Pillar",
+    "cta_text": "Every month's pillar is backed by ready-to-use teacher guides, activities, and materials.",
+    "cta_button": "View Materials for Schools"
   },
   "notFound": {
     "title": "We couldn't find that page",

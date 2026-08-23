@@ -11,7 +11,7 @@ function Features() {
   const howItWorksSteps = [
     { icon: 'fas fa-book-open', title: t('howItWorks.step_1_title'), description: t('howItWorks.step_1_desc') },
     { icon: 'fas fa-people-group', title: t('howItWorks.step_2_title'), description: t('howItWorks.step_2_desc') },
-    { icon: 'fas fa-chart-line', title: t('howItWorks.step_3_title'), description: t('howItWorks.step_3_desc') },
+    { icon: 'fas fa-chart-line', title: t('howItWorks.step_3_title'), description: t('howItWorks.step_3_desc'), link: '/research', linkLabel: t('howItWorks.step_3_link') },
   ];
 
   const features = [
@@ -61,6 +61,11 @@ function Features() {
                 </div>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
+                {step.link && (
+                  <a href={step.link} className="how-it-works-step-link">
+                    {step.linkLabel} <i className="fas fa-arrow-right"></i>
+                  </a>
+                )}
               </div>
             ))}
           </div>

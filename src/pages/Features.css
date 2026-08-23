@@ -78,7 +78,20 @@
   font-size: 16px;
   color: #555;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 0 12px;
+}
+
+.how-it-works-step-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #045b57;
+  text-decoration: none;
+}
+
+.how-it-works-step-link i {
+  font-size: 12px;
+  margin-left: 2px;
 }
 
 .features-section {

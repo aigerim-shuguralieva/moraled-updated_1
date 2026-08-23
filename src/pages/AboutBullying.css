@@ -221,6 +221,23 @@
   margin: 0 auto;
 }
 
+.bullying-related-link {
+  margin-top: 28px !important;
+  font-size: 15px !important;
+  color: #666 !important;
+}
+
+.bullying-related-link a {
+  color: #045b57;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bullying-related-link a i {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
 .bullying-cta {
   background: linear-gradient(to right, #045b57, #0a8479);
   color: #ffffff;

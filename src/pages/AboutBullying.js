@@ -124,6 +124,10 @@ function AboutBullying() {
         <p>
           {t('bullying.family_text')}
         </p>
+        <p className="bullying-related-link">
+          {t('bullying.related_climate_text')}{' '}
+          <a href="/classroom-climate">{t('bullying.related_climate_link')} <i className="fas fa-arrow-right"></i></a>
+        </p>
       </section>
 
       <section className="bullying-cta">

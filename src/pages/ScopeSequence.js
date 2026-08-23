@@ -82,6 +82,12 @@ function ScopeSequence() {
         </div>
       </section>
 
+      <section className="scope-cta">
+        <h2>{t('scopeSequence.cta_title')}</h2>
+        <p>{t('scopeSequence.cta_text')}</p>
+        <a href="/materials" className="btn-primary">{t('scopeSequence.cta_button')}</a>
+      </section>
+
       <Footer />
     </>
   );

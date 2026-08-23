@@ -14,6 +14,7 @@ import AboutBullying from './pages/AboutBullying';
 import StudentVolunteers from './pages/StudentVolunteers';
 import Materials from './pages/Materials';
 import Events from './pages/Events';
+import ClassroomClimate from './pages/ClassroomClimate';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
@@ -37,6 +38,7 @@ function App() {
         <Route path="/student-volunteers" element={<StudentVolunteers />} />
         <Route path="/materials" element={<Materials />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/classroom-climate" element={<ClassroomClimate />} />
         <Route path="/moraled" element={<MoralEd />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

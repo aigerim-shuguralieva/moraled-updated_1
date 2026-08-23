@@ -38,6 +38,13 @@ function Research() {
     },
   ];
 
+  const citations = [1, 2, 3].map((n) => ({
+    authors: t(`research.citation_${n}_authors`),
+    title: t(`research.citation_${n}_title`),
+    source: t(`research.citation_${n}_source`),
+    finding: t(`research.citation_${n}_finding`),
+  }));
+
   return (
     <>
       <Seo
@@ -78,6 +85,28 @@ function Research() {
               <p>{method.description}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="research-field-section">
+        <div className="research-field-wrapper">
+          <h2>{t('research.field_research_title')}</h2>
+          <p className="research-field-intro">
+            {t('research.field_research_intro')}
+          </p>
+          <div className="research-citations">
+            {citations.map((c) => (
+              <div className="research-citation-card" key={c.title}>
+                <p className="research-citation-finding">{c.finding}</p>
+                <p className="research-citation-source">
+                  {c.authors}. <em>{c.title}</em>. {c.source}.
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="research-field-disclaimer">
+            {t('research.field_research_disclaimer')}
+          </p>
         </div>
       </section>
 

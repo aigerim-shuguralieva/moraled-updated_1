@@ -88,6 +88,7 @@ export default function Header() {
                   <NavLink to="/research" className="nav-dropdown__item">{t('nav.research')}</NavLink>
                   <NavLink to="/about-bullying" className="nav-dropdown__item">{t('nav.about_bullying')}</NavLink>
                   <NavLink to="/student-volunteers" className="nav-dropdown__item">{t('nav.student_volunteers')}</NavLink>
+                  <NavLink to="/classroom-climate" className="nav-dropdown__item">{t('nav.climate')}</NavLink>
                   <NavLink to="/events" className="nav-dropdown__item">{t('nav.events')}</NavLink>
                   <NavLink to="/faq" className="nav-dropdown__item">{t('nav.faq')}</NavLink>
                 </div>
@@ -144,6 +145,7 @@ export default function Header() {
             <NavLink to="/research" onClick={() => setOpen(false)}>{t('nav.research')}</NavLink>
             <NavLink to="/about-bullying" onClick={() => setOpen(false)}>{t('nav.about_bullying')}</NavLink>
             <NavLink to="/student-volunteers" onClick={() => setOpen(false)}>{t('nav.student_volunteers')}</NavLink>
+            <NavLink to="/classroom-climate" onClick={() => setOpen(false)}>{t('nav.climate')}</NavLink>
             <NavLink to="/events" onClick={() => setOpen(false)}>{t('nav.events')}</NavLink>
             <NavLink to="/faq" onClick={() => setOpen(false)}>{t('nav.faq')}</NavLink>
 

@@ -1,6 +1,38 @@
 .about-section {
   padding: 80px 20px;
-  
+
+}
+
+/* DEFINITION */
+.definition-section {
+  background: #ffffff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.definition-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.definition-section h2 {
+  font-size: 34px;
+  color: #045b57;
+  margin-bottom: 24px;
+}
+
+.definition-text {
+  font-size: 19px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.definition-followup {
+  font-size: 17px;
+  color: #666;
+  font-style: italic;
+  line-height: 1.7;
 }
 
 /* OUR STORY */

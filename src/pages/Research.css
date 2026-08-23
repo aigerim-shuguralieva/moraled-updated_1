@@ -142,6 +142,66 @@
   margin: 0;
 }
 
+.research-field-section {
+  background-color: #fdf3e7;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.research-field-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.research-field-wrapper h2 {
+  font-size: 34px;
+  color: #045b57;
+  margin-bottom: 16px;
+}
+
+.research-field-intro {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.research-citations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.research-citation-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.research-citation-finding {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.65;
+  margin: 0 0 10px;
+}
+
+.research-citation-source {
+  font-size: 13.5px;
+  color: #777;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.research-field-disclaimer {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 .research-cta {
   background-color: #ffffff;
   padding: 100px 20px;

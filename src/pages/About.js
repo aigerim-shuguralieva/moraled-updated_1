@@ -79,6 +79,15 @@ function About() {
           </div>
         </section>
 
+        {/* DEFINITION */}
+        <section className="definition-section" data-aos="fade-up">
+          <div className="definition-wrapper">
+            <h2>{t('definition.title')}</h2>
+            <p className="definition-text">{t('definition.text')}</p>
+            <p className="definition-followup">{t('definition.followup')}</p>
+          </div>
+        </section>
+
         {/* CORE VALUES */}
         <section className="core-values" data-aos="fade-up">
           <h2>{t('home.core_values_title')}</h2>
