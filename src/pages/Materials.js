@@ -23,6 +23,32 @@ function Materials() {
     description: t(`materials.item_${item.n}_desc`),
   }));
 
+  const workshops = [
+    {
+      n: 1,
+      link: '/about-bullying',
+      image: '/images/children-classroom-story.jpg',
+    },
+    {
+      n: 2,
+      link: '/scope-and-sequence',
+      image: '/images/teacher-instructing-students.jpg',
+    },
+  ].map((w) => ({
+    link: w.link,
+    image: w.image,
+    title: t(`materials.workshop_${w.n}_title`),
+    description: t(`materials.workshop_${w.n}_desc`),
+    points: [
+      t(`materials.workshop_${w.n}_point_1`),
+      t(`materials.workshop_${w.n}_point_2`),
+      t(`materials.workshop_${w.n}_point_3`),
+      t(`materials.workshop_${w.n}_point_4`),
+    ],
+    linkText: t(`materials.workshop_${w.n}_link`),
+    caption: t(`materials.workshop_${w.n}_caption`),
+  }));
+
   return (
     <>
       <Seo
@@ -57,6 +83,53 @@ function Materials() {
                 <p>{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="materials-workshops-section">
+        <div className="materials-wrapper">
+          <h2>{t('materials.workshops_title')}</h2>
+          <p className="materials-intro">
+            {t('materials.workshops_subtitle')}
+          </p>
+          <div className="materials-workshops-list">
+            {workshops.map((workshop) => (
+              <div className="materials-workshop-card" key={workshop.title}>
+                <div className="materials-workshop-content">
+                  <h3>{workshop.title}</h3>
+                  <p>{workshop.description}</p>
+                  <div className="materials-workshop-points-grid">
+                    {workshop.points.map((point) => (
+                      <div className="materials-workshop-point" key={point}>
+                        <div className="materials-workshop-point-icon">
+                          <i className="fas fa-lightbulb"></i>
+                        </div>
+                        <span>{point}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <a href={workshop.link} className="materials-workshop-link">
+                    {workshop.linkText} <i className="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+                <div
+                  className="materials-workshop-visual"
+                  style={{ backgroundImage: `url(${workshop.image})` }}
+                >
+                  <div className="materials-workshop-visual-caption">{workshop.caption}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="materials-related-link materials-workshops-events-link">
+            {t('materials.workshops_cta_text')}{' '}
+            <a href="/events">{t('materials.workshops_cta_link')} <i className="fas fa-arrow-right"></i></a>
+          </p>
+          <div className="materials-workshops-verify">
+            <a href="/verify-certificate" className="btn-verify-certificate">
+              <i className="fas fa-graduation-cap"></i> {t('certificate.button_label')}
+            </a>
           </div>
         </div>
       </section>

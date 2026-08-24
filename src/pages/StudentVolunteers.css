@@ -324,6 +324,34 @@
   margin-right: auto;
 }
 
+.volunteers-verify {
+  margin-top: 24px;
+}
+
+.btn-verify-certificate {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right, #0a8479, #4fb8a8);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-verify-certificate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+.btn-verify-certificate i {
+  font-size: 18px;
+}
+
 @media (max-width: 700px) {
   .volunteers-step {
     grid-template-columns: 48px 1fr;

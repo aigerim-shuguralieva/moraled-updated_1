@@ -60,4 +60,8 @@
     <loc>https://moraled.com/privacy-policy</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://moraled.com/verify-certificate</loc>
+    <priority>0.4</priority>
+  </url>
 </urlset>

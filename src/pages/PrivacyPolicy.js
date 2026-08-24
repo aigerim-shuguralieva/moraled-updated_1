@@ -26,7 +26,7 @@ function PrivacyPolicy() {
         <div className="privacy-wrapper">
           <p>
             {t('privacy.intro')}{' '}
-            <a href="mailto:info@moraled.org">info@moraled.org</a>.
+            <a href="mailto:linekginfo@gmail.com">linekginfo@gmail.com</a>.
           </p>
 
           <h2>{t('privacy.info_title')}</h2>
@@ -57,7 +57,7 @@ function PrivacyPolicy() {
           <h2>{t('privacy.rights_title')}</h2>
           <p>
             {t('privacy.rights_text')}{' '}
-            <a href="mailto:info@moraled.org">info@moraled.org</a>.
+            <a href="mailto:linekginfo@gmail.com">linekginfo@gmail.com</a>.
           </p>
 
           <h2>{t('privacy.changes_title')}</h2>

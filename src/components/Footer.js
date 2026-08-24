@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ export default function Footer() {
           <p>{t('footer.brand_tagline')}</p>
           <div className="footer__contact">
             <p><FaMapMarkerAlt /> {t('contact.location_text')}</p>
-            <p><FaEnvelope /> info@moraled.org</p>
+            <p><FaEnvelope /> linekginfo@gmail.com</p>
           </div>
         </div>
 
@@ -28,14 +28,13 @@ export default function Footer() {
 
         <div className="footer__social">
           <h4>{t('footer.connect')}</h4>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /> {t('footer.facebook')}</a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /> {t('footer.instagram')}</a>
-          <a href="https://youtube.com" target="_blank" rel="noreferrer"><FaYoutube /> {t('footer.youtube')}</a>
+          <a href="https://www.instagram.com/edu.moralvalues/" target="_blank" rel="noreferrer"><FaInstagram /> {t('footer.instagram')}</a>
+          <a href="https://www.youtube.com/@moral-ed" target="_blank" rel="noreferrer"><FaYoutube /> {t('footer.youtube')}</a>
         </div>
       </div>
 
       <div className="footer__bottom">
-        <p>© {new Date().getFullYear()} {t('footer.brand_name')}. {t('footer.rights')}</p>
+        <p>© {new Date().getFullYear()} {t('footer.brand_name')}. {t('footer.rights')} <a href="https://line.kg" target="_blank" rel="noreferrer">line.kg</a></p>
         <a href="/privacy-policy" className="footer__privacy-link">{t('privacy.hero_title')}</a>
       </div>
     </footer>

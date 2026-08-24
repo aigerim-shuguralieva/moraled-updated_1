@@ -172,6 +172,11 @@ function StudentVolunteers() {
         <h2>{t('volunteers.cta_title')}</h2>
         <p>{t('volunteers.cta_text')}</p>
         <a href="/contact" className="btn-primary">{t('volunteers.cta_button')}</a>
+        <div className="volunteers-verify">
+          <a href="/verify-certificate" className="btn-verify-certificate">
+            <i className="fas fa-graduation-cap"></i> {t('certificate.button_label')}
+          </a>
+        </div>
       </section>
 
       <Footer />

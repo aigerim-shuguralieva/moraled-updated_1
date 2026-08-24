@@ -17,6 +17,7 @@ import Events from './pages/Events';
 import ClassroomClimate from './pages/ClassroomClimate';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import VerifyCertificate from './pages/VerifyCertificate';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/moraled" element={<MoralEd />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/verify-certificate" element={<VerifyCertificate />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
