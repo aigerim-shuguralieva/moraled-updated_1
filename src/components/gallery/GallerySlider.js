@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import './GallerySlider.css';
 
 const galleryItems = [
-  { image: '/images/gallery1.jpg', caption: 'Educator training in Bishkek' },
-  { image: '/images/gallery2.jpg', caption: 'Character circle at partner school' },
-  { image: '/images/gallery3.jpg', caption: 'Student-led empathy project' },
-  { image: '/images/gallery4.jpg', caption: 'Seminar on values-based teaching' },
-  { image: '/images/gallery5.jpg', caption: 'Interactive classroom activity' },
+  { image: '/images/gallery1.jpg', caption: 'Every day, a step toward the world beyond the classroom' },
+  { image: '/images/gallery2.jpg', caption: 'Learning that connects students to the wider world' },
+  { image: '/images/gallery3.jpg', caption: 'Milestones worth celebrating' },
+  { image: '/images/gallery4.jpg', caption: 'The everyday tools of teaching and learning' },
+  { image: '/images/gallery5.jpg', caption: 'The essentials behind every character education lesson' },
 ];
 
 const GallerySlider = () => {
