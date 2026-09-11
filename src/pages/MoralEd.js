@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Seo from '../components/Seo';
 import GallerySlider from '../components/gallery/GallerySlider';
 import SeminarSection from '../components/seminars/SeminarSection';
+import PartnersSection from '../components/partners/PartnersSection';
 
 function MoralEd() {
   const { t } = useTranslation();
@@ -30,10 +31,13 @@ function MoralEd() {
       {/* ✅ Yeni Seminer Modülü */}
       <SeminarSection />
 
+      {/* Partner Schools Carousel */}
+      <PartnersSection />
+
       <section className="moraled-cta">
         <h2>{t('moraled.cta_title')}</h2>
         <p>{t('moraled.cta_text')}</p>
-        <a href="/partner-with-us" className="btn-primary">{t('moraled.cta_button')}</a>
+        <a href="/contact" className="btn-primary">{t('moraled.cta_button')}</a>
       </section>
 
       <Footer />

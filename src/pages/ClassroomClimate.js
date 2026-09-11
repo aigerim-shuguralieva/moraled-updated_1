@@ -89,7 +89,7 @@ function ClassroomClimate() {
       <section className="climate-cta">
         <h2>{t('climate.cta_title')}</h2>
         <p>{t('climate.cta_text')}</p>
-        <a href="/partner-with-us" className="btn-primary">{t('climate.cta_button')}</a>
+        <a href="/contact" className="btn-primary">{t('climate.cta_button')}</a>
       </section>
 
       <Footer />

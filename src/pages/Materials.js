@@ -137,7 +137,7 @@ function Materials() {
       <section className="materials-cta">
         <h2>{t('materials.cta_title')}</h2>
         <p>{t('materials.cta_text')}</p>
-        <a href="/partner-with-us" className="btn-primary">{t('materials.cta_button')}</a>
+        <a href="/contact" className="btn-primary">{t('materials.cta_button')}</a>
       </section>
 
       <Footer />

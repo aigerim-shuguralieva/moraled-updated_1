@@ -3,7 +3,6 @@ import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import About from './pages/About';
 import Team from './pages/Team';
-import PartnerWithUs from './pages/PartnerWithUs';
 import Features from './pages/Features';
 import MoralEd from './pages/MoralEd';
 import Contact from './pages/Contact';
@@ -28,9 +27,9 @@ function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/partner-with-us" element={<PartnerWithUs />} />
-        <Route path="/partners" element={<Navigate to="/partner-with-us" replace />} />
-        <Route path="/for-schools" element={<Navigate to="/partner-with-us" replace />} />
+        <Route path="/partners" element={<Navigate to="/contact" replace />} />
+        <Route path="/for-schools" element={<Navigate to="/contact" replace />} />
+        <Route path="/partner-with-us" element={<Navigate to="/contact" replace />} />
         <Route path="/features" element={<Features />} />
         <Route path="/scope-and-sequence" element={<ScopeSequence />} />
         <Route path="/faq" element={<FAQ />} />

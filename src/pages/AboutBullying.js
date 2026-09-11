@@ -135,7 +135,7 @@ function AboutBullying() {
         <p>
           {t('bullying.cta_text')}
         </p>
-        <a href="/partner-with-us" className="btn-primary">{t('bullying.cta_button')}</a>
+        <a href="/contact" className="btn-primary">{t('bullying.cta_button')}</a>
       </section>
 
       <Footer />

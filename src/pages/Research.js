@@ -8,13 +8,6 @@ import './Research.css';
 function Research() {
   const { t } = useTranslation();
 
-  const stats = [
-    { number: t('research.stat_1_number'), label: t('research.stat_1_label') },
-    { number: t('research.stat_2_number'), label: t('research.stat_2_label') },
-    { number: t('research.stat_3_number'), label: t('research.stat_3_label') },
-    { number: t('research.stat_4_number'), label: t('research.stat_4_label') },
-  ];
-
   const methods = [
     {
       icon: 'fas fa-clipboard-check',
@@ -59,20 +52,6 @@ function Research() {
         <p>{t('research.hero_subtitle')}</p>
       </section>
 
-      <section className="research-stats-section">
-        <div className="research-stats-grid">
-          {stats.map((stat) => (
-            <div className="research-stat-card" key={stat.label}>
-              <div className="research-stat-number">{stat.number}</div>
-              <p>{stat.label}</p>
-            </div>
-          ))}
-        </div>
-        <p className="research-stats-note">
-          {t('research.stats_note')}
-        </p>
-      </section>
-
       <section className="research-methods-section">
         <h2>{t('research.methods_title')}</h2>
         <div className="research-methods-grid">
@@ -113,7 +92,7 @@ function Research() {
       <section className="research-cta">
         <h2>{t('research.cta_title')}</h2>
         <p>{t('research.cta_text')}</p>
-        <a href="/partner-with-us" className="btn-primary">{t('research.cta_button')}</a>
+        <a href="/contact" className="btn-primary">{t('research.cta_button')}</a>
       </section>
 
       <Footer />

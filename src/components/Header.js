@@ -43,9 +43,9 @@ export default function Header() {
     <>
       <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
         <div className="header__inner">
-          <div className="logo">
+          <NavLink to="/" end className="logo" aria-label={t('nav.about')}>
             <Logo className="logo-svg" />
-          </div>
+          </NavLink>
 
          <nav className="nav">
             <NavLink to="/" end>{t('nav.about')}</NavLink>
@@ -70,8 +70,6 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-            <NavLink to="/partner-with-us">{t('nav.partner_with_us')}</NavLink>
 
             <div className="nav-dropdown">
               <button
@@ -138,8 +136,6 @@ export default function Header() {
             <NavLink to="/scope-and-sequence" onClick={() => setOpen(false)}>{t('nav.scope_sequence')}</NavLink>
             <NavLink to="/materials" onClick={() => setOpen(false)}>{t('nav.materials')}</NavLink>
             <NavLink to="/moralEd" onClick={() => setOpen(false)}>{t('nav.moraled')}</NavLink>
-
-            <NavLink to="/partner-with-us" onClick={() => setOpen(false)}>{t('nav.partner_with_us')}</NavLink>
 
             <span className="mobile-nav__label">{t('nav.resources')}</span>
             <NavLink to="/research" onClick={() => setOpen(false)}>{t('nav.research')}</NavLink>

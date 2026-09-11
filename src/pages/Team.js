@@ -21,8 +21,10 @@ function Team() {
       role: t('team.role_3'),
     },
     {
-      name: 'Farid Akhmedov',
+      name: 'Aigerim Shuguralieva',
       role: t('team.role_4'),
+      photo: '/images/team/aigerim-shuguralieva.jpg',
+      bio: t('team.bio_4'),
     },
   ];
 
@@ -46,9 +48,14 @@ function Team() {
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div className="team-card" key={index}>
-                <div className="team-avatar" aria-hidden="true">{getInitials(member.name)}</div>
+                {member.photo ? (
+                  <img className="team-avatar-photo" src={member.photo} alt={member.name} />
+                ) : (
+                  <div className="team-avatar" aria-hidden="true">{getInitials(member.name)}</div>
+                )}
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
+                {member.bio && <p className="team-bio">{member.bio}</p>}
               </div>
             ))}
           </div>

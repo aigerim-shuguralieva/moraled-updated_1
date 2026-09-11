@@ -31,6 +31,21 @@ function About() {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const leaderTestimonials = [
+    {
+      quote: t('forSchools.testimonial_1_quote'),
+      name: t('forSchools.testimonial_1_name'),
+    },
+    {
+      quote: t('forSchools.testimonial_2_quote'),
+      name: t('forSchools.testimonial_2_name'),
+    },
+    {
+      quote: t('forSchools.testimonial_3_quote'),
+      name: t('forSchools.testimonial_3_name'),
+    },
+  ];
+
   const pillars = pillarIcons.map((icon, index) => {
     const n = index + 1;
     return {
@@ -101,6 +116,40 @@ function About() {
                 <p>{p.focus}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* OUR FRAMEWORK */}
+        <section className="about-section framework-section" data-aos="fade-up">
+          <div className="framework-wrapper">
+            <h2>{t('about.framework_title')}</h2>
+            <div className="framework-grid">
+              <div className="framework-card">
+                <span className="framework-icon"><i className="fas fa-child"></i></span>
+                <h3>{t('about.framework_1_title')}</h3>
+                <p>{t('about.framework_1_desc')}</p>
+              </div>
+              <div className="framework-card">
+                <span className="framework-icon"><i className="fas fa-lightbulb"></i></span>
+                <h3>{t('about.framework_2_title')}</h3>
+                <p>{t('about.framework_2_desc')}</p>
+              </div>
+              <div className="framework-card">
+                <span className="framework-icon"><i className="fas fa-palette"></i></span>
+                <h3>{t('about.framework_3_title')}</h3>
+                <p>{t('about.framework_3_desc')}</p>
+              </div>
+              <div className="framework-card">
+                <span className="framework-icon"><i className="fas fa-handshake"></i></span>
+                <h3>{t('about.framework_4_title')}</h3>
+                <p>{t('about.framework_4_desc')}</p>
+              </div>
+              <div className="framework-card">
+                <span className="framework-icon"><i className="fas fa-chart-line"></i></span>
+                <h3>{t('about.framework_5_title')}</h3>
+                <p>{t('about.framework_5_desc')}</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -243,6 +292,20 @@ function About() {
             </a>
           </div>
         </section>
+
+        {/* SCHOOL LEADER TESTIMONIALS */}
+        <section className="leader-testimonials" data-aos="fade-up">
+          <h2>{t('forSchools.testimonials_title')}</h2>
+          <div className="leader-testimonials-grid">
+            {leaderTestimonials.map((testimonial) => (
+              <div className="leader-testimonial-card" key={testimonial.name}>
+                <i className="fas fa-quote-left leader-testimonial-quote-icon"></i>
+                <p className="leader-testimonial-quote">{testimonial.quote}</p>
+                <p className="leader-testimonial-name">{testimonial.name}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
 
 
@@ -256,7 +319,7 @@ function About() {
             </p>
           </div>
           <div className="story-image">
-            <img src="/images/our-story.jpg" alt="Founding of MoralEd" />
+            <img src="/images/our-story.jpg" alt="Illustration representing research, knowledge, and lifelong learning" />
           </div>
         </div>
       </section>
@@ -285,41 +348,6 @@ function About() {
       </section>
 
 
-      {/* OUR FRAMEWORK */}
-      <section className="about-section framework-section">
-        <div className="framework-wrapper">
-          <h2>{t('about.framework_title')}</h2>
-          <div className="framework-grid">
-            <div className="framework-card">
-              <span className="framework-icon"><i className="fas fa-child"></i></span>
-              <h3>{t('about.framework_1_title')}</h3>
-              <p>{t('about.framework_1_desc')}</p>
-            </div>
-            <div className="framework-card">
-              <span className="framework-icon"><i className="fas fa-lightbulb"></i></span>
-              <h3>{t('about.framework_2_title')}</h3>
-              <p>{t('about.framework_2_desc')}</p>
-            </div>
-            <div className="framework-card">
-              <span className="framework-icon"><i className="fas fa-palette"></i></span>
-              <h3>{t('about.framework_3_title')}</h3>
-              <p>{t('about.framework_3_desc')}</p>
-            </div>
-            <div className="framework-card">
-              <span className="framework-icon"><i className="fas fa-handshake"></i></span>
-              <h3>{t('about.framework_4_title')}</h3>
-              <p>{t('about.framework_4_desc')}</p>
-            </div>
-            <div className="framework-card">
-              <span className="framework-icon"><i className="fas fa-chart-line"></i></span>
-              <h3>{t('about.framework_5_title')}</h3>
-              <p>{t('about.framework_5_desc')}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
       {/* OUR BELIEFS */}
       <section className="about-section beliefs-section">
         <div className="beliefs-wrapper">
@@ -332,53 +360,6 @@ function About() {
           <div className="beliefs-image">
             <img src="/images/beliefs-illustration.png" alt="MoralEd Beliefs Illustration" />
             <p className="image-caption">{t('about.beliefs_caption')}</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-section timeline-section">
-        <div className="timeline-wrapper">
-          <h2>{t('about.timeline_title')}</h2>
-          <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-icon"><i className="fas fa-seedling"></i></div>
-              <div className="timeline-content">
-                <h3>{t('about.timeline_2019_title')}</h3>
-                <p>{t('about.timeline_2019_desc')}</p>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><i className="fas fa-book"></i></div>
-              <div className="timeline-content">
-                <h3>{t('about.timeline_2020_title')}</h3>
-                <p>{t('about.timeline_2020_desc')}</p>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><i className="fas fa-school"></i></div>
-              <div className="timeline-content">
-                <h3>{t('about.timeline_2021_title')}</h3>
-                <p>{t('about.timeline_2021_desc')}</p>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><i className="fas fa-globe"></i></div>
-              <div className="timeline-content">
-                <h3>{t('about.timeline_2023_title')}</h3>
-                <p>{t('about.timeline_2023_desc')}</p>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><i className="fas fa-chart-line"></i></div>
-              <div className="timeline-content">
-                <h3>2025 – Measuring Impact</h3>
-                <p>We begin tracking growth in empathy, responsibility, and ethical decision-making across schools.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

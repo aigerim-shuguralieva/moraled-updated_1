@@ -37,6 +37,29 @@ function Features() {
     },
   ];
 
+  const schoolBenefits = [
+    {
+      icon: 'fas fa-heart',
+      title: t('forSchools.benefit_1_title'),
+      description: t('forSchools.benefit_1_desc'),
+    },
+    {
+      icon: 'fas fa-chart-bar',
+      title: t('forSchools.benefit_2_title'),
+      description: t('forSchools.benefit_2_desc'),
+    },
+    {
+      icon: 'fas fa-book-open',
+      title: t('forSchools.benefit_3_title'),
+      description: t('forSchools.benefit_3_desc'),
+    },
+    {
+      icon: 'fas fa-globe',
+      title: t('forSchools.benefit_4_title'),
+      description: t('forSchools.benefit_4_desc'),
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -89,6 +112,24 @@ function Features() {
           </div>
         </div>
       </section>
+
+      <section className="features-benefits-section">
+        <div className="features-benefits-wrapper">
+          <h2>{t('forSchools.benefits_title')}</h2>
+          <div className="features-benefits-grid">
+            {schoolBenefits.map((benefit) => (
+              <div className="features-benefit-card" key={benefit.title}>
+                <div className="features-benefit-icon">
+                  <i className={benefit.icon}></i>
+                </div>
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
