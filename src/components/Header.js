@@ -49,6 +49,7 @@ export default function Header() {
 
          <nav className="nav">
             <NavLink to="/" end>{t('nav.about')}</NavLink>
+            <NavLink to="/our-story">{t('nav.our_story')}</NavLink>
             <NavLink to="/team">{t('nav.team')}</NavLink>
 
             <div className="nav-dropdown">
@@ -129,6 +130,7 @@ export default function Header() {
           {open && (
           <nav className="mobile-nav">
             <NavLink to="/" onClick={() => setOpen(false)}>{t('nav.about')}</NavLink>
+            <NavLink to="/our-story" onClick={() => setOpen(false)}>{t('nav.our_story')}</NavLink>
             <NavLink to="/team" onClick={() => setOpen(false)}>{t('nav.team')}</NavLink>
 
             <span className="mobile-nav__label">{t('nav.curriculum')}</span>

@@ -95,19 +95,22 @@
 }
 
 .scope-cta {
-  background: linear-gradient(to right, #045b57, #8a5a2e);
-  color: #ffffff;
+  background: #ffffff;
+  border-top: 4px solid #ecc9ab;
+  border-bottom: 4px solid #ecc9ab;
   padding: 90px 20px;
   text-align: center;
 }
 
 .scope-cta h2 {
   font-size: 32px;
+  color: #045b57;
   margin-bottom: 12px;
 }
 
 .scope-cta p {
   font-size: 18px;
+  color: #444;
   margin-bottom: 28px;
   max-width: 600px;
   margin-left: auto;

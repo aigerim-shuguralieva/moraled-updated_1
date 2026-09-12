@@ -31,21 +31,6 @@ function About() {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const leaderTestimonials = [
-    {
-      quote: t('forSchools.testimonial_1_quote'),
-      name: t('forSchools.testimonial_1_name'),
-    },
-    {
-      quote: t('forSchools.testimonial_2_quote'),
-      name: t('forSchools.testimonial_2_name'),
-    },
-    {
-      quote: t('forSchools.testimonial_3_quote'),
-      name: t('forSchools.testimonial_3_name'),
-    },
-  ];
-
   const pillars = pillarIcons.map((icon, index) => {
     const n = index + 1;
     return {
@@ -293,76 +278,7 @@ function About() {
           </div>
         </section>
 
-        {/* SCHOOL LEADER TESTIMONIALS */}
-        <section className="leader-testimonials" data-aos="fade-up">
-          <h2>{t('forSchools.testimonials_title')}</h2>
-          <div className="leader-testimonials-grid">
-            {leaderTestimonials.map((testimonial) => (
-              <div className="leader-testimonial-card" key={testimonial.name}>
-                <i className="fas fa-quote-left leader-testimonial-quote-icon"></i>
-                <p className="leader-testimonial-quote">{testimonial.quote}</p>
-                <p className="leader-testimonial-name">{testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-        </section>
       </main>
-
-
-      {/* OUR STORY */}
-      <section className="about-section story-section">
-        <div className="story-wrapper">
-          <div className="story-text">
-            <h2>{t('about.story_title')}</h2>
-            <p style={{whiteSpace: 'pre-line'}}>
-              {t('about.story_text')}
-            </p>
-          </div>
-          <div className="story-image">
-            <img src="/images/our-story.jpg" alt="Illustration representing research, knowledge, and lifelong learning" />
-          </div>
-        </div>
-      </section>
-
-      {/* OUR MISSION */}
-      <section className="about-section mission-section">
-        <div className="mission-wrapper">
-          <h2>{t('about.mission_title')}</h2>
-          <p className="mission-lead">
-            {t('about.mission_lead')}
-          </p>
-          <p className="mission-body">
-            {t('about.mission_body')}
-          </p>
-        </div> 
-      </section>
-
-      {/* OUR VISION */}
-      <section className="about-section vision-section">
-        <div className="vision-wrapper">
-          <h2>{t('about.vision_title')}</h2>
-          <p>
-            {t('about.vision_text')}
-          </p>
-        </div>
-      </section>
-
-
-      {/* OUR BELIEFS */}
-      <section className="about-section beliefs-section">
-        <div className="beliefs-wrapper">
-          <div className="beliefs-text">
-            <h2>{t('about.beliefs_title')}</h2>
-           <p>
-              {t('about.beliefs_text_1')}
-            </p>
-          </div>
-          <div className="beliefs-image">
-            <img src="/images/beliefs-illustration.png" alt="MoralEd Beliefs Illustration" />
-            <p className="image-caption">{t('about.beliefs_caption')}</p>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </>

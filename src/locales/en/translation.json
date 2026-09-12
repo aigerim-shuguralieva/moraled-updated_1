@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "our_story": "Our Story",
     "team": "Our Team",
     "features": "Features",
     "moraled": "MoralEd",
@@ -99,6 +100,11 @@
     "testimonial_button": "Share Your Story"
   },
   "about": {
+    "hero_title": "Our Story",
+    "hero_subtitle": "Why MoralEd exists, what we believe, and the future we're working toward.",
+    "cta_title": "Want to learn more about bringing MoralEd to your school?",
+    "cta_text": "Reach out and we'll walk you through what a partnership looks like.",
+    "cta_button": "Contact Us",
     "story_title": "Our Story",
     "story_text": "MoralEd was born from a shared belief: that character is the root of lifelong success. Inspired by both global research and local wisdom, we set out to build an educational ecosystem where values are not taught as extras—but lived as essentials.\n\nFrom its earliest days, MoralEd has stood for more than curriculum. It has stood for culture. For community. For the timeless principles that shape not just students—but societies.",
     "mission_title": "Our Mission",

@@ -305,19 +305,22 @@
 }
 
 .volunteers-cta {
-  background: linear-gradient(to right, #045b57, #8a5a2e);
-  color: #ffffff;
+  background: #ffffff;
+  border-top: 4px solid #ecc9ab;
+  border-bottom: 4px solid #ecc9ab;
   padding: 100px 20px;
   text-align: center;
 }
 
 .volunteers-cta h2 {
   font-size: 36px;
+  color: #045b57;
   margin-bottom: 12px;
 }
 
 .volunteers-cta p {
   font-size: 20px;
+  color: #444;
   margin-bottom: 32px;
   max-width: 650px;
   margin-left: auto;

@@ -2,6 +2,7 @@ import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import About from './pages/About';
+import OurStory from './pages/OurStory';
 import Team from './pages/Team';
 import Features from './pages/Features';
 import MoralEd from './pages/MoralEd';
@@ -26,6 +27,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<About />} />
+        <Route path="/our-story" element={<OurStory />} />
         <Route path="/team" element={<Team />} />
         <Route path="/partners" element={<Navigate to="/contact" replace />} />
         <Route path="/for-schools" element={<Navigate to="/contact" replace />} />
