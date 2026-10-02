@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="footer__social">
           <h4>{t('footer.connect')}</h4>
           <a href="https://www.instagram.com/edu.moralvalues/" target="_blank" rel="noreferrer"><FaInstagram /> {t('footer.instagram')}</a>
-          <a href="https://www.youtube.com/@moral-ed" target="_blank" rel="noreferrer"><FaYoutube /> {t('footer.youtube')}</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><FaYoutube /> {t('footer.youtube')}</a>
         </div>
       </div>
 
