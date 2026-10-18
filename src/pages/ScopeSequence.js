@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -16,8 +17,10 @@ function ScopeSequence() {
   }));
 
   const ageBandIcons = ['fas fa-shapes', 'fas fa-book-reader', 'fas fa-comments', 'fas fa-user-graduate'];
+  const ageBandSlugs = ['early-elementary', 'upper-elementary', 'middle-school', null];
   const ageBands = [1, 2, 3, 4].map((n, index) => ({
     icon: ageBandIcons[index],
+    slug: ageBandSlugs[index],
     title: t(`scopeSequence.band_${n}_title`),
     range: t(`scopeSequence.band_${n}_range`),
     description: t(`scopeSequence.band_${n}_desc`),
@@ -76,6 +79,13 @@ function ScopeSequence() {
                 <span className="age-band-range">{band.range}</span>
                 <h3>{band.title}</h3>
                 <p>{band.description}</p>
+                {band.slug ? (
+                  <Link className="age-band-link" to={`/scope-and-sequence/${band.slug}`}>
+                    {t('ageDetail.link_text')} <i className="fas fa-arrow-right"></i>
+                  </Link>
+                ) : (
+                  <span className="age-band-soon">{t('ageDetail.coming_soon')}</span>
+                )}
               </div>
             ))}
           </div>

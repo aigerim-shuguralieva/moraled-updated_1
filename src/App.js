@@ -8,6 +8,7 @@ import Features from './pages/Features';
 import MoralEd from './pages/MoralEd';
 import Contact from './pages/Contact';
 import ScopeSequence from './pages/ScopeSequence';
+import ScopeSequenceAge from './pages/ScopeSequenceAge';
 import FAQ from './pages/FAQ';
 import Research from './pages/Research';
 import AboutBullying from './pages/AboutBullying';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/partner-with-us" element={<Navigate to="/contact" replace />} />
         <Route path="/features" element={<Features />} />
         <Route path="/scope-and-sequence" element={<ScopeSequence />} />
+        <Route path="/scope-and-sequence/:band" element={<ScopeSequenceAge />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/research" element={<Research />} />
         <Route path="/about-bullying" element={<AboutBullying />} />

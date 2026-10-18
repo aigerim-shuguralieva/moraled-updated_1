@@ -552,5 +552,75 @@
     "form_button": "Submit Request",
     "alert_success": "Thank you! We'll follow up by email shortly.",
     "alert_error": "Something went wrong. Please try again or email us directly."
+  },
+  "ageDetail": {
+    "link_text": "See topics & activities",
+    "coming_soon": "Topics coming soon",
+    "intro": "Month by month, the pillar focus and lesson topics used with this age group.",
+    "topics_title": "Lesson topics",
+    "grade_label": "Grade {{n}}",
+    "focus_title": "Focus",
+    "activities_title": "Classroom activities",
+    "other_ages": "Teaching a different age group?",
+    "seo_description": "Monthly pillar focus and lesson topics for MoralEd, {{range}}.",
+    "early": {
+      "grades": "Grades 1–2",
+      "focus": [
+        "Being kind, being thankful, being generous",
+        "Manners and courtesy. Love and respect.",
+        "Being honest. Being sincere.",
+        "Accountability, reliability, self-management",
+        "Justice, inclusion, equality, sportsmanship",
+        "Love nature and animals. Our historical values. Protecting the environment.",
+        "Reading habits",
+        "Being humble, teamwork",
+        "Technology, healthy habits"
+      ]
+    },
+    "upper": {
+      "grades": "Grades 3–4",
+      "focus": [
+        "Being helpful. Being compassionate. Mercy.",
+        "Etiquette and politeness. Manners and courtesy. Peace.",
+        "Honesty. Keeping promises. Reliability. Digital honesty.",
+        "Completing tasks. Taking responsibility for mistakes. Caring for school property. Time management.",
+        "Right and justice. Equality, playing by the rules, respecting different opinions.",
+        "Love nature and animals. Coexistence. Protecting the environment. Respecting cultural traditions.",
+        "Reading habits. Setting goals. Never give up.",
+        "Being an example. Teamwork.",
+        "Emotion and behavior control. Health and cleanliness."
+      ]
+    },
+    "middle": {
+      "grades": "Grades 5–7",
+      "focus": [
+        "Building positive relationships: helping each other, sharing and generosity, being content and grateful",
+        "Respecting ourselves, others, and culture: etiquette, modesty",
+        "Building trust through integrity: keeping promises, honesty, academic integrity, digital honesty, confidentiality and trust",
+        "Taking ownership: responsibility, managing responsibilities at home and school, time management, goal setting",
+        "Justice and equality, respecting different opinions, resolving conflicts fairly, bullying prevention, inclusive behavior",
+        "Contributing to society: living together, aesthetics and art, community participation, environmental stewardship",
+        "Growing through challenges: bravery, reading habits, being adaptable, hardworking",
+        "Leading with character: participation, creativity, decision-making, teamwork, communication skills",
+        "Making wise choices: remaining calm, health, hygiene and environment, right use of technology, managing emotions, healthy routines, responsible social media use"
+      ]
+    },
+    "activities": {
+      "topic": "What is respect? Respect for parents",
+      "items": [
+        {
+          "name": "Sorting Game",
+          "text": "Prepare picture cards. Students sort them into two groups. Respectful: helping clean, listening, saying please, sharing, speaking politely. Not respectful: shouting, ignoring parents, throwing toys, interrupting, refusing to help. Discuss why each card belongs in its group."
+        },
+        {
+          "name": "Respect Tree",
+          "text": "Give each child a paper leaf and ask: “What is one way you can show respect to your parents?” For example: I listen. I say thank you. I help clean. I speak kindly. I obey the first time. I hug my parents. Attach all the leaves to a classroom tree labelled “Respect Grows Here.”"
+        },
+        {
+          "name": "Home Challenge",
+          "text": "Create a Respect Chart for one week. Each day students colour a star if they listened the first time, used kind words, helped at home, said “thank you” or cleaned up after themselves. They share their experiences the following week."
+        }
+      ]
+    }
   }
 }
