@@ -5,6 +5,7 @@ const schoolPartners = [
   { name: 'Indigo Prime Academy', logo: '/logos/indigo-prime.png' },
   { name: 'Indigo Sapat', logo: '/logos/indigo-sapat.png' },
   { name: "Indigo Asylkech Girls' School", logo: '/logos/indigo-asylkech.jpg' },
+  { name: 'Indigo Academy', logo: '/logos/indigo-academy.png' },
 ];
 
 // The track is two identical halves and scrolls by exactly one half for a seamless loop.
