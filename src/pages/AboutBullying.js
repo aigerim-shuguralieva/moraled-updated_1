@@ -10,14 +10,14 @@ function AboutBullying() {
 
   const forms = [
     {
-      icon: 'fas fa-hand-fist',
-      title: t('bullying.form_1_title'),
-      description: t('bullying.form_1_desc'),
-    },
-    {
       icon: 'fas fa-comment-slash',
       title: t('bullying.form_2_title'),
       description: t('bullying.form_2_desc'),
+    },
+    {
+      icon: 'fas fa-hand-fist',
+      title: t('bullying.form_1_title'),
+      description: t('bullying.form_1_desc'),
     },
     {
       icon: 'fas fa-user-slash',
